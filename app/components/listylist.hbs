@@ -1,0 +1,26 @@
+
+
+<h2>This is the title</h2>
+<h3>{{@title}}</h3>
+
+
+
+<ul>
+
+
+    {{#each @people as |person|}}
+
+    <li>{{person}} -- new version
+
+        <button {{action "showThis" person}}>Select</button>
+
+    </li>
+
+    <br>
+    
+
+    {{/each}}
+
+
+
+</ul>

@@ -1,0 +1,25 @@
+
+
+<h2>Index Page</h2>
+
+<h6>Please Enjoy our informtation-rich monkey encyclopedia</h6>
+<br><br><br>
+
+
+{{#each this.model as |monkey|}}
+  <article class="listing">
+    <div class="details">
+      <h3>{{monkey.title}}</h3>
+      <div class="detail owner">
+        <span>Species:</span> {{monkey.species}}
+      </div>
+      <div class="detail type">
+        <span>Size:</span> {{monkey.size}}
+      </div>
+      <div class="detail location">
+        <span>Social Behavior:</span> {{monkey.socialOrder}}
+      </div>
+    
+    </div>
+  </article>
+{{/each}}

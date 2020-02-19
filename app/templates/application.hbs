@@ -1,5 +1,21 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<h2>Monkey Encyclopedia Pro</h2>
+
+
+{{!-- <a href="/scientists"> scientists page</a> --}}
+
+{{#link-to "scientists" class="button"}}
+
+Go To Scientists Page
+{{/link-to}}
+
+
+
+
+
+{{#link-to "monkeys" class="button"}}
+    Go To Monkeys Page
+{{/link-to}}
+
 
 {{outlet}}
+
