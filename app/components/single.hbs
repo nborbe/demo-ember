@@ -1,1 +1,19 @@
-{{yield}}
+<article class="listing">
+
+ <a class="image {{if this.isWide "wide"}}" role="button"
+ onclick={{action "toggleImageSize"}}
+ >
+  <img src={{@monkey.image}} alt="this is a picture of a monkey">
+  <small>View Larger</small>
+ </a>
+
+  <div class="details">
+    <h3>{{@monkey.species}}</h3>
+    <div class="detail owner">
+      <span>Size:</span> {{@monkey.size}}
+    </div>
+    <div class="detail type">
+      <span>Description:</span> {{@monkey.socialOrder}}
+    </div>
+  </div>
+</article>
