@@ -1,19 +1,30 @@
 <article class="listing">
 
+<div>
+
  <a class="image {{if this.isWide "wide"}}" role="button"
  onclick={{action "toggleImageSize"}}
  >
-  <img src={{@monkey.image}} alt="this is a picture of a monkey">
+  <img src={{monkey.image}} alt="this is a picture of a monkey">
   <small>View Larger</small>
  </a>
-
+</div>
+<div></div>
   <div class="details">
-    <h3>{{@monkey.species}}</h3>
+    <h3>{{monkey.species}}</h3>
     <div class="detail owner">
-      <span>Size:</span> {{@monkey.size}}
+      <span>Size:</span> {{monkey.size}}
     </div>
     <div class="detail type">
-      <span>Description:</span> {{@monkey.socialOrder}}
+      <span>Description:</span> {{monkey.socialOrder}}
     </div>
+
+
+  <div class="detail type">
+
+    <span>Type: </span>  {{monkey-type monkey.type}}
+
+  </div>
+
   </div>
 </article>
