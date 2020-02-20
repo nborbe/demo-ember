@@ -12,6 +12,7 @@ species: DS.attr(),
 size: DS.attr(),
 socialOrder: DS.attr(),
 image: DS.attr(),
+name: DS.attr(),
 
 
 
